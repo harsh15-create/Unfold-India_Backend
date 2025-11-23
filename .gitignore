@@ -1,0 +1,8 @@
+# keep the API keys private
+.env
+
+# python compiled junk
+__pycache__/
+
+# optional — vscode settings
+.vscode/
