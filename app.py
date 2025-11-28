@@ -49,7 +49,7 @@ async def chat(request: Request):
     is_itinerary = "itinerary" in msg.lower()
     payload = {
         "model": "llama-3.1-8b-instant",
-        "max_tokens": 2000 if is_itinerary else 500,
+        "max_tokens": 2000 if is_itinerary else 2000,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": msg}
